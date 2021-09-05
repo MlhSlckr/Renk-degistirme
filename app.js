@@ -18,5 +18,13 @@ button.addEventListener('click', () => {
   body.style.backgroundColor = colorCode;
   button.style.color = colorCode;
   text.style.color = colorCode;
+  localStorage.setItem('color', document.body.style.backgroundColor = colorCode);
 })
 
+if (localStorage.color) {
+  body.style.backgroundColor = localStorage.color;
+  button.style.color = localStorage.color;
+  text.style.color = localStorage.color;
+  text.innerHTML = localStorage.color;
+
+}
