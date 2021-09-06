@@ -20,7 +20,7 @@ button.addEventListener('click', () => {
   button.style.color = colorCode;
   text.style.color = colorCode;
   title.innerHTML = colorCode + ' | Renk Değiştirme';
-  localStorage.setItem('color', document.body.style.backgroundColor = colorCode);
+  localStorage.setItem('color', colorCode);
 })
 
 if (localStorage.color) {
@@ -30,3 +30,4 @@ if (localStorage.color) {
   text.innerHTML = localStorage.color;
   title.innerHTML = localStorage.color + ' | Renk Değiştirme';
 }
+
