@@ -1,6 +1,7 @@
 const button = document.querySelector('.color-change');
 const text = document.querySelector('.color-text');
 const body = document.querySelector('body');
+const title = document.querySelector('title');
 const codesArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F']
 let x;
 
@@ -18,6 +19,7 @@ button.addEventListener('click', () => {
   body.style.backgroundColor = colorCode;
   button.style.color = colorCode;
   text.style.color = colorCode;
+  title.innerHTML = colorCode + ' | Renk Değiştirme';
   localStorage.setItem('color', document.body.style.backgroundColor = colorCode);
 })
 
@@ -26,5 +28,5 @@ if (localStorage.color) {
   button.style.color = localStorage.color;
   text.style.color = localStorage.color;
   text.innerHTML = localStorage.color;
-
+  title.innerHTML = localStorage.color + ' | Renk Değiştirme';
 }
