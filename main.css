@@ -42,11 +42,12 @@
   letter-spacing: 20px;
   -webkit-transition: 300ms all;
   transition: 300ms all;
+  text-shadow: 0px 0px 3px white;
 }
 
 .color-change {
   background-color: transparent;
-  border: 1px solid #000;
+  border: 2px solid #000;
   font-size: 30px;
   padding: 15px 30px;
   cursor: pointer;
@@ -58,5 +59,69 @@
 .color-change:hover {
   background-color: #000;
   color: #fff;
+}
+
+.color .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.color .buttons .far {
+  font-size: 40px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: #000;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+  position: relative;
+}
+
+.color .buttons .far:hover {
+  color: #fff;
+}
+
+.q {
+  position: absolute;
+  right: -100%;
+}
+
+.copy-btn {
+  width: 50px;
+  height: 50px;
+}
+
+.copied {
+  position: fixed;
+  bottom: -100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.copied-text {
+  background-color: #d2fbd0;
+  padding: 10px;
+  border-radius: 10px;
+  color: #0d5f07;
+}
+
+.bottom {
+  bottom: 5%;
 }
 /*# sourceMappingURL=main.css.map */
