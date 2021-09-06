@@ -19,7 +19,7 @@ button.addEventListener('click', () => {
   body.style.backgroundColor = colorCode;
   button.style.color = colorCode;
   text.style.color = colorCode;
-  title.innerHTML = colorCode + ' | Renk Değiştirme';
+  title.innerHTML = colorCode + ' I Renk Değiştirme';
   localStorage.setItem('color', colorCode);
 })
 
