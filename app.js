@@ -28,6 +28,6 @@ if (localStorage.color) {
   button.style.color = localStorage.color;
   text.style.color = localStorage.color;
   text.innerHTML = localStorage.color;
-  title.innerHTML = localStorage.color + ' | Renk Değiştirme';
+  title.innerHTML = localStorage.color + ' I Renk Değiştirme';
 }
 
